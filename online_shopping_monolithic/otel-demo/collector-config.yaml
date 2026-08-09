@@ -1,0 +1,62 @@
+# receivers:
+#   otlp:
+#     protocols:
+#       http:
+#       grpc:
+
+# exporters:
+#   debug:
+#     logLevel: debug
+#   jaeger:
+#     endpoint: "http://localhost:14268/api/traces"
+
+# processors:
+#   batch:
+
+# service:
+#   pipelines:
+#     traces:
+#       receivers: [otlp]
+#       processors: [batch]
+#       exporters: [debug, jaeger]
+#     metrics:
+#       receivers: [otlp]
+#       processors: [batch]
+#       exporters: [debug, otlp]
+#     logs:
+#       receivers: [otlp]
+#       processors: [batch]
+#       exporters: [debug, otlp]
+
+receivers:
+  otlp:
+    protocols:
+      http:
+      grpc:
+
+exporters:
+  jaeger:
+    endpoint: "http://jaeger:14268/api/traces"
+  prometheus:
+    endpoint: "0.0.0.0:9464"
+  loki:
+    endpoint: "http://loki:3100/loki/api/v1/push"
+
+processors:
+  batch:
+
+service:
+  pipelines:
+    traces:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [jaeger]
+    metrics:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [prometheus]
+    logs:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [loki]
+

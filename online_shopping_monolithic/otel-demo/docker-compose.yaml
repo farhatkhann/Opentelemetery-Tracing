@@ -1,0 +1,40 @@
+services:
+  jaeger:
+    image: jaegertracing/all-in-one:latest
+    container_name: groceryAppMono
+    ports:
+      - "16686:16686"  # UI
+      - "14268:14268"  # OTLP HTTP
+    environment:
+      COLLECTOR_ZIPKIN_HOST_PORT: ":9411"
+
+  loki:
+    image: grafana/loki:2.9.1
+    container_name: loki
+    ports:
+      - "3100:3100"
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    ports:
+      - "3000:3000"
+    depends_on:
+      - loki
+      - jaeger
+
+  otel-collector:
+    image: otel/opentelemetry-collector-contrib:latest
+    container_name: otel-collector
+    volumes:
+      - ./collector-config.yaml:/etc/otel/config.yaml
+    command: ["--config=/etc/otel/config.yaml"]
+    ports:
+      - "4318:4318" # OTLP HTTP
+      - "4317:4317" # OTLP gRPC
+      - "9464:9464" # Prometheus metrics
+    depends_on:
+      - jaeger
+      - loki

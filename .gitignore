@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Environment files
+**/.env
+
+# Node.js
+**/node_modules/
+
+# Python
+__pycache__/
+**/__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Ignore generated trace folders
+online_shopping_monolithic/datasets/traces/monolith/off/
+online_shopping_monolithic/datasets/traces/monolith/sample1/
+online_shopping_monolithic/datasets/traces/monolith/sample10/
+online_shopping_monolithic/datasets/traces/monolith/sample100/
+
+# Keep the results Excel file
+# (no ignore rule for this file)
+
+# Logs
+*.log

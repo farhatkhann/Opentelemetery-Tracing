@@ -1,0 +1,349 @@
+{
+  "total_operations": 51,
+  "by_layer": {
+    "route": 18,
+    "service": 18,
+    "repository": 15
+  },
+  "operations": [
+    {
+      "name": "POST /customer/signup",
+      "layer": "route",
+      "file": "api\\customer.js",
+      "line": 7
+    },
+    {
+      "name": "POST /customer/login",
+      "layer": "route",
+      "file": "api\\customer.js",
+      "line": 17
+    },
+    {
+      "name": "POST /customer/address",
+      "layer": "route",
+      "file": "api\\customer.js",
+      "line": 29
+    },
+    {
+      "name": "GET /customer/profile",
+      "layer": "route",
+      "file": "api\\customer.js",
+      "line": 48
+    },
+    {
+      "name": "GET /customer/shoping-details",
+      "layer": "route",
+      "file": "api\\customer.js",
+      "line": 58
+    },
+    {
+      "name": "GET /customer/wishlist",
+      "layer": "route",
+      "file": "api\\customer.js",
+      "line": 69
+    },
+    {
+      "name": "POST /product/create",
+      "layer": "route",
+      "file": "api\\products.js",
+      "line": 11
+    },
+    {
+      "name": "GET /category/:type",
+      "layer": "route",
+      "file": "api\\products.js",
+      "line": 26
+    },
+    {
+      "name": "GET /:id",
+      "layer": "route",
+      "file": "api\\products.js",
+      "line": 40
+    },
+    {
+      "name": "POST /ids",
+      "layer": "route",
+      "file": "api\\products.js",
+      "line": 54
+    },
+    {
+      "name": "PUT /wishlist",
+      "layer": "route",
+      "file": "api\\products.js",
+      "line": 67
+    },
+    {
+      "name": "DELETE /wishlist/:id",
+      "layer": "route",
+      "file": "api\\products.js",
+      "line": 80
+    },
+    {
+      "name": "PUT /cart",
+      "layer": "route",
+      "file": "api\\products.js",
+      "line": 95
+    },
+    {
+      "name": "DELETE /cart/:id",
+      "layer": "route",
+      "file": "api\\products.js",
+      "line": 111
+    },
+    {
+      "name": "GET /",
+      "layer": "route",
+      "file": "api\\products.js",
+      "line": 125
+    },
+    {
+      "name": "POST /shopping/order",
+      "layer": "route",
+      "file": "api\\shopping.js",
+      "line": 10
+    },
+    {
+      "name": "GET /shopping/orders",
+      "layer": "route",
+      "file": "api\\shopping.js",
+      "line": 26
+    },
+    {
+      "name": "GET /shopping/cart",
+      "layer": "route",
+      "file": "api\\shopping.js",
+      "line": 40
+    },
+    {
+      "name": "SignIn",
+      "class": "CustomerService",
+      "layer": "service",
+      "file": "services\\customer-service.js",
+      "line": 13
+    },
+    {
+      "name": "SignUp",
+      "class": "CustomerService",
+      "layer": "service",
+      "file": "services\\customer-service.js",
+      "line": 40
+    },
+    {
+      "name": "AddNewAddress",
+      "class": "CustomerService",
+      "layer": "service",
+      "file": "services\\customer-service.js",
+      "line": 62
+    },
+    {
+      "name": "GetProfile",
+      "class": "CustomerService",
+      "layer": "service",
+      "file": "services\\customer-service.js",
+      "line": 77
+    },
+    {
+      "name": "GetShopingDetails",
+      "class": "CustomerService",
+      "layer": "service",
+      "file": "services\\customer-service.js",
+      "line": 88
+    },
+    {
+      "name": "GetWishList",
+      "class": "CustomerService",
+      "layer": "service",
+      "file": "services\\customer-service.js",
+      "line": 103
+    },
+    {
+      "name": "AddToWishlist",
+      "class": "CustomerService",
+      "layer": "service",
+      "file": "services\\customer-service.js",
+      "line": 113
+    },
+    {
+      "name": "ManageCart",
+      "class": "CustomerService",
+      "layer": "service",
+      "file": "services\\customer-service.js",
+      "line": 123
+    },
+    {
+      "name": "ManageOrder",
+      "class": "CustomerService",
+      "layer": "service",
+      "file": "services\\customer-service.js",
+      "line": 132
+    },
+    {
+      "name": "SubscribeEvents",
+      "class": "CustomerService",
+      "layer": "service",
+      "file": "services\\customer-service.js",
+      "line": 141
+    },
+    {
+      "name": "CreateProduct",
+      "class": "ProductService",
+      "layer": "service",
+      "file": "services\\product-service.js",
+      "line": 12
+    },
+    {
+      "name": "GetProducts",
+      "class": "ProductService",
+      "layer": "service",
+      "file": "services\\product-service.js",
+      "line": 21
+    },
+    {
+      "name": "GetProductDescription",
+      "class": "ProductService",
+      "layer": "service",
+      "file": "services\\product-service.js",
+      "line": 42
+    },
+    {
+      "name": "GetProductsByCategory",
+      "class": "ProductService",
+      "layer": "service",
+      "file": "services\\product-service.js",
+      "line": 51
+    },
+    {
+      "name": "GetSelectedProducts",
+      "class": "ProductService",
+      "layer": "service",
+      "file": "services\\product-service.js",
+      "line": 61
+    },
+    {
+      "name": "GetProductById",
+      "class": "ProductService",
+      "layer": "service",
+      "file": "services\\product-service.js",
+      "line": 70
+    },
+    {
+      "name": "PlaceOrder",
+      "class": "ShoppingService",
+      "layer": "service",
+      "file": "services\\shopping-service.js",
+      "line": 10
+    },
+    {
+      "name": "GetOrders",
+      "class": "ShoppingService",
+      "layer": "service",
+      "file": "services\\shopping-service.js",
+      "line": 23
+    },
+    {
+      "name": "CreateCustomer",
+      "class": "CustomerRepository",
+      "layer": "repository",
+      "file": "database\\repository\\customer-repository.js",
+      "line": 10
+    },
+    {
+      "name": "CreateAddress",
+      "class": "CustomerRepository",
+      "layer": "repository",
+      "file": "database\\repository\\customer-repository.js",
+      "line": 30
+    },
+    {
+      "name": "FindCustomer",
+      "class": "CustomerRepository",
+      "layer": "repository",
+      "file": "database\\repository\\customer-repository.js",
+      "line": 57
+    },
+    {
+      "name": "FindCustomerById",
+      "class": "CustomerRepository",
+      "layer": "repository",
+      "file": "database\\repository\\customer-repository.js",
+      "line": 70
+    },
+    {
+      "name": "Wishlist",
+      "class": "CustomerRepository",
+      "layer": "repository",
+      "file": "database\\repository\\customer-repository.js",
+      "line": 87
+    },
+    {
+      "name": "AddWishlistItem",
+      "class": "CustomerRepository",
+      "layer": "repository",
+      "file": "database\\repository\\customer-repository.js",
+      "line": 103
+    },
+    {
+      "name": "AddCartItem",
+      "class": "CustomerRepository",
+      "layer": "repository",
+      "file": "database\\repository\\customer-repository.js",
+      "line": 144
+    },
+    {
+      "name": "AddOrderToProfile",
+      "class": "CustomerRepository",
+      "layer": "repository",
+      "file": "database\\repository\\customer-repository.js",
+      "line": 195
+    },
+    {
+      "name": "CreateProduct",
+      "class": "ProductRepository",
+      "layer": "repository",
+      "file": "database\\repository\\product-repository.js",
+      "line": 6
+    },
+    {
+      "name": "Products",
+      "class": "ProductRepository",
+      "layer": "repository",
+      "file": "database\\repository\\product-repository.js",
+      "line": 39
+    },
+    {
+      "name": "FindById",
+      "class": "ProductRepository",
+      "layer": "repository",
+      "file": "database\\repository\\product-repository.js",
+      "line": 51
+    },
+    {
+      "name": "FindByCategory",
+      "class": "ProductRepository",
+      "layer": "repository",
+      "file": "database\\repository\\product-repository.js",
+      "line": 63
+    },
+    {
+      "name": "FindSelectedProducts",
+      "class": "ProductRepository",
+      "layer": "repository",
+      "file": "database\\repository\\product-repository.js",
+      "line": 76
+    },
+    {
+      "name": "Orders",
+      "class": "ShoppingRepository",
+      "layer": "repository",
+      "file": "database\\repository\\shopping-repository.js",
+      "line": 11
+    },
+    {
+      "name": "CreateNewOrder",
+      "class": "ShoppingRepository",
+      "layer": "repository",
+      "file": "database\\repository\\shopping-repository.js",
+      "line": 21
+    }
+  ]
+}
