@@ -1,0 +1,44 @@
+{
+  "label": "sample100/cart_workflow/run1",
+  "sampling": "sample100",
+  "workflow": "cart_workflow",
+  "run": 1,
+  "trace_count": 13812,
+  "span_count": 185672,
+  "route_coverage_percent": 33.33,
+  "matched_routes": [
+    "POST /customer/signup",
+    "POST /customer/login",
+    "PUT /cart",
+    "DELETE /cart/:id",
+    "GET /",
+    "GET /shopping/cart"
+  ],
+  "context_propagation": {
+    "traces_file": "..\\datasets\\traces\\monolith\\sample100\\cart_workflow\\run1\\traces.json",
+    "total_traces": 13812,
+    "total_spans": 185672,
+    "single_span_traces": 0,
+    "single_span_traces_percent": 0.0,
+    "traces_with_broken_references": 0,
+    "traces_with_broken_references_percent": 0.0,
+    "traces_with_multiple_roots": 0,
+    "traces_with_multiple_roots_percent": 0.0,
+    "traces_with_zero_roots": 0,
+    "total_orphan_spans": 0,
+    "broken_reference_examples": [],
+    "multiple_root_examples": []
+  },
+  "journey_reconstruction": {
+    "expected_step_count": 5,
+    "steps_present": [
+      "GET /",
+      "PUT /cart",
+      "GET /shopping/cart",
+      "PUT /cart",
+      "DELETE /cart/:id"
+    ],
+    "steps_missing": [],
+    "journey_completeness_percent": 100.0
+  }
+}

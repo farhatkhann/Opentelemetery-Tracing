@@ -1,0 +1,44 @@
+{
+  "label": "sample100/browse_product/run1",
+  "sampling": "sample100",
+  "workflow": "browse_product",
+  "run": 1,
+  "trace_count": 19966,
+  "span_count": 199656,
+  "route_coverage_percent": 33.33,
+  "matched_routes": [
+    "POST /customer/signup",
+    "POST /customer/login",
+    "GET /category/:type",
+    "GET /:id",
+    "POST /ids",
+    "GET /"
+  ],
+  "context_propagation": {
+    "traces_file": "..\\datasets\\traces\\monolith\\sample100\\browse_product\\run1\\traces.json",
+    "total_traces": 19966,
+    "total_spans": 199656,
+    "single_span_traces": 0,
+    "single_span_traces_percent": 0.0,
+    "traces_with_broken_references": 0,
+    "traces_with_broken_references_percent": 0.0,
+    "traces_with_multiple_roots": 0,
+    "traces_with_multiple_roots_percent": 0.0,
+    "traces_with_zero_roots": 0,
+    "total_orphan_spans": 0,
+    "broken_reference_examples": [],
+    "multiple_root_examples": []
+  },
+  "journey_reconstruction": {
+    "expected_step_count": 4,
+    "steps_present": [
+      "GET /",
+      "GET /:id",
+      "POST /ids"
+    ],
+    "steps_missing": [
+      "GET /category/Electronics"
+    ],
+    "journey_completeness_percent": 75.0
+  }
+}

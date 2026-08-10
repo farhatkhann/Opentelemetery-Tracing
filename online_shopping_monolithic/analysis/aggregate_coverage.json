@@ -1,0 +1,374 @@
+{
+  "off": {
+    "runs_included": [
+      [
+        "browse_product",
+        "run1"
+      ],
+      [
+        "cart_workflow",
+        "run1"
+      ],
+      [
+        "checkout_workflow",
+        "run1"
+      ],
+      [
+        "customer_workflow",
+        "run1"
+      ],
+      [
+        "login",
+        "run1"
+      ],
+      [
+        "signup",
+        "run1"
+      ],
+      [
+        "wishlist_workflow",
+        "run1"
+      ]
+    ],
+    "total_traces": 0,
+    "total_spans": 0,
+    "route_coverage_percent": 0.0,
+    "matched_routes": [],
+    "missing_routes": [
+      "DELETE /cart/:id",
+      "DELETE /wishlist/:id",
+      "GET /",
+      "GET /:id",
+      "GET /category/:type",
+      "GET /customer/profile",
+      "GET /customer/shoping-details",
+      "GET /customer/wishlist",
+      "GET /shopping/cart",
+      "GET /shopping/orders",
+      "POST /customer/address",
+      "POST /customer/login",
+      "POST /customer/signup",
+      "POST /ids",
+      "POST /product/create",
+      "POST /shopping/order",
+      "PUT /cart",
+      "PUT /wishlist"
+    ],
+    "per_workflow_route_hits": {
+      "browse_product": [],
+      "cart_workflow": [],
+      "checkout_workflow": [],
+      "customer_workflow": [],
+      "login": [],
+      "signup": [],
+      "wishlist_workflow": []
+    }
+  },
+  "sample1": {
+    "runs_included": [
+      [
+        "browse_product",
+        "run1"
+      ],
+      [
+        "cart_workflow",
+        "run1"
+      ],
+      [
+        "checkout_workflow",
+        "run1"
+      ],
+      [
+        "customer_workflow",
+        "run1"
+      ],
+      [
+        "login",
+        "run1"
+      ],
+      [
+        "signup",
+        "run1"
+      ],
+      [
+        "wishlist_workflow",
+        "run1"
+      ]
+    ],
+    "total_traces": 1176,
+    "total_spans": 42638,
+    "route_coverage_percent": 88.89,
+    "matched_routes": [
+      "DELETE /cart/:id",
+      "DELETE /wishlist/:id",
+      "GET /",
+      "GET /:id",
+      "GET /category/:type",
+      "GET /customer/profile",
+      "GET /customer/shoping-details",
+      "GET /customer/wishlist",
+      "GET /shopping/cart",
+      "GET /shopping/orders",
+      "POST /customer/login",
+      "POST /customer/signup",
+      "POST /ids",
+      "POST /shopping/order",
+      "PUT /cart",
+      "PUT /wishlist"
+    ],
+    "missing_routes": [
+      "POST /customer/address",
+      "POST /product/create"
+    ],
+    "per_workflow_route_hits": {
+      "browse_product": [
+        "GET /",
+        "GET /:id",
+        "GET /category/:type",
+        "POST /customer/login",
+        "POST /customer/signup",
+        "POST /ids"
+      ],
+      "cart_workflow": [
+        "DELETE /cart/:id",
+        "GET /",
+        "GET /shopping/cart",
+        "POST /customer/login",
+        "POST /customer/signup",
+        "PUT /cart"
+      ],
+      "checkout_workflow": [
+        "GET /",
+        "GET /shopping/cart",
+        "GET /shopping/orders",
+        "POST /customer/login",
+        "POST /shopping/order",
+        "PUT /cart"
+      ],
+      "customer_workflow": [
+        "GET /customer/profile",
+        "GET /customer/shoping-details"
+      ],
+      "login": [
+        "POST /customer/login"
+      ],
+      "signup": [
+        "POST /customer/signup"
+      ],
+      "wishlist_workflow": [
+        "DELETE /wishlist/:id",
+        "GET /",
+        "GET /customer/wishlist",
+        "POST /customer/login",
+        "PUT /wishlist"
+      ]
+    }
+  },
+  "sample10": {
+    "runs_included": [
+      [
+        "browse_product",
+        "run1"
+      ],
+      [
+        "cart_workflow",
+        "run1"
+      ],
+      [
+        "checkout_workflow",
+        "run1"
+      ],
+      [
+        "customer_workflow",
+        "run1"
+      ],
+      [
+        "login",
+        "run1"
+      ],
+      [
+        "signup",
+        "run1"
+      ],
+      [
+        "wishlist_workflow",
+        "run1"
+      ]
+    ],
+    "total_traces": 11556,
+    "total_spans": 146968,
+    "route_coverage_percent": 94.44,
+    "matched_routes": [
+      "DELETE /cart/:id",
+      "DELETE /wishlist/:id",
+      "GET /",
+      "GET /:id",
+      "GET /category/:type",
+      "GET /customer/profile",
+      "GET /customer/shoping-details",
+      "GET /customer/wishlist",
+      "GET /shopping/cart",
+      "GET /shopping/orders",
+      "POST /customer/address",
+      "POST /customer/login",
+      "POST /customer/signup",
+      "POST /ids",
+      "POST /shopping/order",
+      "PUT /cart",
+      "PUT /wishlist"
+    ],
+    "missing_routes": [
+      "POST /product/create"
+    ],
+    "per_workflow_route_hits": {
+      "browse_product": [
+        "GET /",
+        "GET /:id",
+        "GET /category/:type",
+        "POST /customer/login",
+        "POST /customer/signup",
+        "POST /ids"
+      ],
+      "cart_workflow": [
+        "DELETE /cart/:id",
+        "GET /",
+        "GET /shopping/cart",
+        "POST /customer/login",
+        "POST /customer/signup",
+        "PUT /cart"
+      ],
+      "checkout_workflow": [
+        "GET /",
+        "GET /shopping/cart",
+        "GET /shopping/orders",
+        "POST /customer/login",
+        "POST /customer/signup",
+        "POST /shopping/order",
+        "PUT /cart"
+      ],
+      "customer_workflow": [
+        "GET /customer/profile",
+        "GET /customer/shoping-details",
+        "POST /customer/address"
+      ],
+      "login": [
+        "POST /customer/login"
+      ],
+      "signup": [
+        "POST /customer/signup"
+      ],
+      "wishlist_workflow": [
+        "DELETE /wishlist/:id",
+        "GET /",
+        "GET /customer/wishlist",
+        "POST /customer/login",
+        "POST /customer/signup",
+        "PUT /wishlist"
+      ]
+    }
+  },
+  "sample100": {
+    "runs_included": [
+      [
+        "browse_product",
+        "run1"
+      ],
+      [
+        "cart_workflow",
+        "run1"
+      ],
+      [
+        "checkout_workflow",
+        "run1"
+      ],
+      [
+        "customer_workflow",
+        "run1"
+      ],
+      [
+        "login",
+        "run1"
+      ],
+      [
+        "signup",
+        "run1"
+      ],
+      [
+        "wishlist_workflow",
+        "run1"
+      ]
+    ],
+    "total_traces": 78889,
+    "total_spans": 966700,
+    "route_coverage_percent": 94.44,
+    "matched_routes": [
+      "DELETE /cart/:id",
+      "DELETE /wishlist/:id",
+      "GET /",
+      "GET /:id",
+      "GET /category/:type",
+      "GET /customer/profile",
+      "GET /customer/shoping-details",
+      "GET /customer/wishlist",
+      "GET /shopping/cart",
+      "GET /shopping/orders",
+      "POST /customer/address",
+      "POST /customer/login",
+      "POST /customer/signup",
+      "POST /ids",
+      "POST /shopping/order",
+      "PUT /cart",
+      "PUT /wishlist"
+    ],
+    "missing_routes": [
+      "POST /product/create"
+    ],
+    "per_workflow_route_hits": {
+      "browse_product": [
+        "GET /",
+        "GET /:id",
+        "GET /category/:type",
+        "POST /customer/login",
+        "POST /customer/signup",
+        "POST /ids"
+      ],
+      "cart_workflow": [
+        "DELETE /cart/:id",
+        "GET /",
+        "GET /shopping/cart",
+        "POST /customer/login",
+        "POST /customer/signup",
+        "PUT /cart"
+      ],
+      "checkout_workflow": [
+        "GET /",
+        "GET /shopping/cart",
+        "GET /shopping/orders",
+        "POST /customer/login",
+        "POST /customer/signup",
+        "POST /shopping/order",
+        "PUT /cart"
+      ],
+      "customer_workflow": [
+        "GET /customer/profile",
+        "GET /customer/shoping-details",
+        "POST /customer/address",
+        "POST /customer/login"
+      ],
+      "login": [
+        "POST /customer/login"
+      ],
+      "signup": [
+        "POST /customer/signup"
+      ],
+      "wishlist_workflow": [
+        "DELETE /wishlist/:id",
+        "GET /",
+        "GET /customer/wishlist",
+        "POST /customer/login",
+        "POST /customer/signup",
+        "PUT /wishlist"
+      ]
+    }
+  }
+}

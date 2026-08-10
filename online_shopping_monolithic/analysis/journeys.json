@@ -1,0 +1,124 @@
+{
+  "browse_product": [
+    {
+      "step": 1,
+      "operation": "GET /"
+    },
+    {
+      "step": 2,
+      "operation": "GET /category/Electronics"
+    },
+    {
+      "step": 3,
+      "operation": "GET /:id"
+    },
+    {
+      "step": 4,
+      "operation": "POST /ids"
+    }
+  ],
+  "cart_workflow": [
+    {
+      "step": 1,
+      "operation": "GET /"
+    },
+    {
+      "step": 2,
+      "operation": "PUT /cart"
+    },
+    {
+      "step": 3,
+      "operation": "GET /shopping/cart"
+    },
+    {
+      "step": 4,
+      "operation": "PUT /cart"
+    },
+    {
+      "step": 5,
+      "operation": "DELETE /cart/:id"
+    }
+  ],
+  "checkout_workflow": [
+    {
+      "step": 1,
+      "operation": "GET /"
+    },
+    {
+      "step": 2,
+      "operation": "PUT /cart"
+    },
+    {
+      "step": 3,
+      "operation": "GET /shopping/cart"
+    },
+    {
+      "step": 4,
+      "operation": "POST /shopping/order"
+    },
+    {
+      "step": 5,
+      "operation": "GET /shopping/orders"
+    }
+  ],
+  "customer_workflow": [
+    {
+      "step": 1,
+      "operation": "POST /customer/address"
+    },
+    {
+      "step": 2,
+      "operation": "GET /customer/profile"
+    },
+    {
+      "step": 3,
+      "operation": "GET /customer/shoping-details"
+    }
+  ],
+  "login": [
+    {
+      "step": 1,
+      "operation": "POST /customer/login"
+    }
+  ],
+  "signup": [
+    {
+      "step": 1,
+      "operation": "POST /customer/signup"
+    }
+  ],
+  "wishlist_workflow": [
+    {
+      "step": 1,
+      "operation": "GET /"
+    },
+    {
+      "step": 2,
+      "operation": "PUT /wishlist"
+    },
+    {
+      "step": 3,
+      "operation": "GET /customer/wishlist"
+    },
+    {
+      "step": 4,
+      "operation": "DELETE /wishlist/:id"
+    },
+    {
+      "step": 5,
+      "operation": "GET /"
+    },
+    {
+      "step": 6,
+      "operation": "PUT /wishlist"
+    },
+    {
+      "step": 7,
+      "operation": "GET /customer/wishlist"
+    },
+    {
+      "step": 8,
+      "operation": "DELETE /wishlist/:id"
+    }
+  ]
+}

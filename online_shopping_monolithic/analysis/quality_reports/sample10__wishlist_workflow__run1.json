@@ -1,0 +1,47 @@
+{
+  "label": "sample10/wishlist_workflow/run1",
+  "sampling": "sample10",
+  "workflow": "wishlist_workflow",
+  "run": 1,
+  "trace_count": 1943,
+  "span_count": 25651,
+  "route_coverage_percent": 33.33,
+  "matched_routes": [
+    "POST /customer/signup",
+    "POST /customer/login",
+    "GET /customer/wishlist",
+    "PUT /wishlist",
+    "DELETE /wishlist/:id",
+    "GET /"
+  ],
+  "context_propagation": {
+    "traces_file": "..\\datasets\\traces\\monolith\\sample10\\wishlist_workflow\\run1\\traces.json",
+    "total_traces": 1943,
+    "total_spans": 25651,
+    "single_span_traces": 0,
+    "single_span_traces_percent": 0.0,
+    "traces_with_broken_references": 0,
+    "traces_with_broken_references_percent": 0.0,
+    "traces_with_multiple_roots": 0,
+    "traces_with_multiple_roots_percent": 0.0,
+    "traces_with_zero_roots": 0,
+    "total_orphan_spans": 0,
+    "broken_reference_examples": [],
+    "multiple_root_examples": []
+  },
+  "journey_reconstruction": {
+    "expected_step_count": 8,
+    "steps_present": [
+      "GET /",
+      "PUT /wishlist",
+      "GET /customer/wishlist",
+      "DELETE /wishlist/:id",
+      "GET /",
+      "PUT /wishlist",
+      "GET /customer/wishlist",
+      "DELETE /wishlist/:id"
+    ],
+    "steps_missing": [],
+    "journey_completeness_percent": 100.0
+  }
+}

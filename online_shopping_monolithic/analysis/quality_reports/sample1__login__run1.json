@@ -1,0 +1,35 @@
+{
+  "label": "sample1/login/run1",
+  "sampling": "sample1",
+  "workflow": "login",
+  "run": 1,
+  "trace_count": 38,
+  "span_count": 380,
+  "route_coverage_percent": 5.56,
+  "matched_routes": [
+    "POST /customer/login"
+  ],
+  "context_propagation": {
+    "traces_file": "..\\datasets\\traces\\monolith\\sample1\\login\\run1\\traces.json",
+    "total_traces": 38,
+    "total_spans": 380,
+    "single_span_traces": 0,
+    "single_span_traces_percent": 0.0,
+    "traces_with_broken_references": 0,
+    "traces_with_broken_references_percent": 0.0,
+    "traces_with_multiple_roots": 0,
+    "traces_with_multiple_roots_percent": 0.0,
+    "traces_with_zero_roots": 0,
+    "total_orphan_spans": 0,
+    "broken_reference_examples": [],
+    "multiple_root_examples": []
+  },
+  "journey_reconstruction": {
+    "expected_step_count": 1,
+    "steps_present": [
+      "POST /customer/login"
+    ],
+    "steps_missing": [],
+    "journey_completeness_percent": 100.0
+  }
+}

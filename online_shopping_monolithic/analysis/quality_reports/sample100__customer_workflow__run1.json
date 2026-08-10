@@ -1,0 +1,40 @@
+{
+  "label": "sample100/customer_workflow/run1",
+  "sampling": "sample100",
+  "workflow": "customer_workflow",
+  "run": 1,
+  "trace_count": 11030,
+  "span_count": 154404,
+  "route_coverage_percent": 22.22,
+  "matched_routes": [
+    "POST /customer/login",
+    "POST /customer/address",
+    "GET /customer/profile",
+    "GET /customer/shoping-details"
+  ],
+  "context_propagation": {
+    "traces_file": "..\\datasets\\traces\\monolith\\sample100\\customer_workflow\\run1\\traces.json",
+    "total_traces": 11030,
+    "total_spans": 154404,
+    "single_span_traces": 0,
+    "single_span_traces_percent": 0.0,
+    "traces_with_broken_references": 0,
+    "traces_with_broken_references_percent": 0.0,
+    "traces_with_multiple_roots": 0,
+    "traces_with_multiple_roots_percent": 0.0,
+    "traces_with_zero_roots": 0,
+    "total_orphan_spans": 0,
+    "broken_reference_examples": [],
+    "multiple_root_examples": []
+  },
+  "journey_reconstruction": {
+    "expected_step_count": 3,
+    "steps_present": [
+      "POST /customer/address",
+      "GET /customer/profile",
+      "GET /customer/shoping-details"
+    ],
+    "steps_missing": [],
+    "journey_completeness_percent": 100.0
+  }
+}

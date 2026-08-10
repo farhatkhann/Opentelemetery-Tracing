@@ -1,0 +1,35 @@
+{
+  "label": "sample100/signup/run1",
+  "sampling": "sample100",
+  "workflow": "signup",
+  "run": 1,
+  "trace_count": 2749,
+  "span_count": 27486,
+  "route_coverage_percent": 5.56,
+  "matched_routes": [
+    "POST /customer/signup"
+  ],
+  "context_propagation": {
+    "traces_file": "..\\datasets\\traces\\monolith\\sample100\\signup\\run1\\traces.json",
+    "total_traces": 2749,
+    "total_spans": 27486,
+    "single_span_traces": 0,
+    "single_span_traces_percent": 0.0,
+    "traces_with_broken_references": 0,
+    "traces_with_broken_references_percent": 0.0,
+    "traces_with_multiple_roots": 0,
+    "traces_with_multiple_roots_percent": 0.0,
+    "traces_with_zero_roots": 0,
+    "total_orphan_spans": 0,
+    "broken_reference_examples": [],
+    "multiple_root_examples": []
+  },
+  "journey_reconstruction": {
+    "expected_step_count": 1,
+    "steps_present": [
+      "POST /customer/signup"
+    ],
+    "steps_missing": [],
+    "journey_completeness_percent": 100.0
+  }
+}
