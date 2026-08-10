@@ -1,0 +1,34 @@
+# .DS_Store
+# **/.env
+# **/.DS_Store
+# **/node_modules
+db
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Environment files
+**/.env
+
+# Node.js
+**/node_modules/
+
+# Python
+__pycache__/
+**/__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Ignore generated trace folders
+datasets/traces/microservices/off/
+datasets/traces/microservices/sample1/
+datasets/traces/microservices/sample10/
+datasets/traces/microservices/sample100/
+
+# Keep the results Excel file
+# (no ignore rule for this file)
+
+# Logs
+*.log
