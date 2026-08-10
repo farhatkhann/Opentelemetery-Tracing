@@ -1,0 +1,72 @@
+{
+  "label": "sample100/login/run2",
+  "sampling": "sample100",
+  "workflow": "login",
+  "run": 2,
+  "microservices_mode": true,
+  "trace_count": 2883,
+  "span_count": 25943,
+  "route_coverage_percent": 4.35,
+  "static_route_count": 23,
+  "matched_route_count": 1,
+  "missing_route_count": 22,
+  "matched_routes": [
+    "[customer] POST /login"
+  ],
+  "missing_routes": [
+    "[customer] GET /profile",
+    "[customer] GET /shoping-details",
+    "[customer] GET /whoami",
+    "[customer] GET /wishlist",
+    "[customer] POST /address",
+    "[customer] POST /signup",
+    "[products] DELETE /cart/:id",
+    "[products] DELETE /wishlist/:id",
+    "[products] GET /",
+    "[products] GET /:id",
+    "[products] GET /category/:type",
+    "[products] GET /whoami",
+    "[products] POST /ids",
+    "[products] POST /product/create",
+    "[products] PUT /cart",
+    "[products] PUT /wishlist",
+    "[shopping] DELETE /cart/:id",
+    "[shopping] GET /cart",
+    "[shopping] GET /orders",
+    "[shopping] GET /whoami",
+    "[shopping] POST /order",
+    "[shopping] PUT /cart"
+  ],
+  "unexpected_route_operations": [
+    "[customer-service] GET /metrics"
+  ],
+  "context_propagation": {
+    "traces_file": "..\\datasets\\traces\\microservices\\sample100\\login\\run2\\traces.json",
+    "total_traces": 2883,
+    "total_spans": 25943,
+    "single_span_traces": 0,
+    "single_span_traces_percent": 0.0,
+    "traces_with_broken_references": 0,
+    "traces_with_broken_references_percent": 0.0,
+    "traces_with_multiple_roots": 0,
+    "traces_with_multiple_roots_percent": 0.0,
+    "traces_with_zero_roots": 0,
+    "total_orphan_spans": 0,
+    "traces_spanning_multiple_services": 0,
+    "traces_spanning_multiple_services_percent": 0.0,
+    "service_count_histogram": {
+      "1": 2883
+    },
+    "broken_reference_examples": [],
+    "multiple_root_examples": [],
+    "cross_service_examples": []
+  },
+  "journey_reconstruction": {
+    "expected_step_count": 1,
+    "steps_present": [
+      "POST /login"
+    ],
+    "steps_missing": [],
+    "journey_completeness_percent": 100.0
+  }
+}

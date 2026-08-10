@@ -1,0 +1,288 @@
+{
+  "off": {
+    "sampling": "off",
+    "sampling_label": "Off",
+    "architecture": "microservices",
+    "static_route_count": 23,
+    "total_workflow_runs": 14,
+    "total_traces": 0,
+    "total_spans": 0,
+    "matched_route_count": 0,
+    "missing_route_count": 23,
+    "route_coverage_percent": 0.0,
+    "matched_routes": [],
+    "missing_routes": [
+      "[customer] POST /signup",
+      "[customer] POST /login",
+      "[customer] POST /address",
+      "[customer] GET /profile",
+      "[customer] GET /shoping-details",
+      "[customer] GET /wishlist",
+      "[customer] GET /whoami",
+      "[products] POST /product/create",
+      "[products] GET /category/:type",
+      "[products] GET /:id",
+      "[products] POST /ids",
+      "[products] PUT /wishlist",
+      "[products] DELETE /wishlist/:id",
+      "[products] PUT /cart",
+      "[products] DELETE /cart/:id",
+      "[products] GET /whoami",
+      "[products] GET /",
+      "[shopping] POST /order",
+      "[shopping] GET /orders",
+      "[shopping] PUT /cart",
+      "[shopping] DELETE /cart/:id",
+      "[shopping] GET /cart",
+      "[shopping] GET /whoami"
+    ],
+    "per_workflow_route_hits": {
+      "browse_product": [],
+      "cart_workflow": [],
+      "checkout_workflow": [],
+      "customer_workflow": [],
+      "login": [],
+      "signup": [],
+      "wishlist_workflow": []
+    }
+  },
+  "sample100": {
+    "sampling": "sample100",
+    "sampling_label": "100%",
+    "architecture": "microservices",
+    "static_route_count": 23,
+    "total_workflow_runs": 14,
+    "total_traces": 131945,
+    "total_spans": 1398820,
+    "matched_route_count": 16,
+    "missing_route_count": 7,
+    "route_coverage_percent": 69.57,
+    "matched_routes": [
+      "[customer] POST /signup",
+      "[customer] POST /login",
+      "[customer] POST /address",
+      "[customer] GET /profile",
+      "[customer] GET /shoping-details",
+      "[products] GET /category/:type",
+      "[products] GET /:id",
+      "[products] POST /ids",
+      "[products] PUT /wishlist",
+      "[products] DELETE /wishlist/:id",
+      "[products] GET /",
+      "[shopping] POST /order",
+      "[shopping] GET /orders",
+      "[shopping] PUT /cart",
+      "[shopping] DELETE /cart/:id",
+      "[shopping] GET /cart"
+    ],
+    "missing_routes": [
+      "[customer] GET /wishlist",
+      "[customer] GET /whoami",
+      "[products] POST /product/create",
+      "[products] PUT /cart",
+      "[products] DELETE /cart/:id",
+      "[products] GET /whoami",
+      "[shopping] GET /whoami"
+    ],
+    "per_workflow_route_hits": {
+      "browse_product": [
+        "[products] GET /category/:type",
+        "[products] GET /:id",
+        "[products] POST /ids",
+        "[products] GET /"
+      ],
+      "cart_workflow": [
+        "[customer] POST /signup",
+        "[customer] POST /login",
+        "[products] GET /",
+        "[shopping] PUT /cart",
+        "[shopping] DELETE /cart/:id",
+        "[shopping] GET /cart"
+      ],
+      "checkout_workflow": [
+        "[customer] POST /signup",
+        "[customer] POST /login",
+        "[products] GET /",
+        "[shopping] POST /order",
+        "[shopping] GET /orders",
+        "[shopping] PUT /cart",
+        "[shopping] GET /cart"
+      ],
+      "customer_workflow": [
+        "[customer] POST /login",
+        "[customer] POST /address",
+        "[customer] GET /profile",
+        "[customer] GET /shoping-details"
+      ],
+      "login": [
+        "[customer] POST /login"
+      ],
+      "signup": [
+        "[customer] POST /signup"
+      ],
+      "wishlist_workflow": [
+        "[products] PUT /wishlist",
+        "[products] DELETE /wishlist/:id",
+        "[products] GET /"
+      ]
+    }
+  },
+  "sample10": {
+    "sampling": "sample10",
+    "sampling_label": "10%",
+    "architecture": "microservices",
+    "static_route_count": 23,
+    "total_workflow_runs": 14,
+    "total_traces": 13144,
+    "total_spans": 139564,
+    "matched_route_count": 15,
+    "missing_route_count": 8,
+    "route_coverage_percent": 65.22,
+    "matched_routes": [
+      "[customer] POST /signup",
+      "[customer] POST /login",
+      "[customer] GET /profile",
+      "[customer] GET /shoping-details",
+      "[products] GET /category/:type",
+      "[products] GET /:id",
+      "[products] POST /ids",
+      "[products] PUT /wishlist",
+      "[products] DELETE /wishlist/:id",
+      "[products] GET /",
+      "[shopping] POST /order",
+      "[shopping] GET /orders",
+      "[shopping] PUT /cart",
+      "[shopping] DELETE /cart/:id",
+      "[shopping] GET /cart"
+    ],
+    "missing_routes": [
+      "[customer] POST /address",
+      "[customer] GET /wishlist",
+      "[customer] GET /whoami",
+      "[products] POST /product/create",
+      "[products] PUT /cart",
+      "[products] DELETE /cart/:id",
+      "[products] GET /whoami",
+      "[shopping] GET /whoami"
+    ],
+    "per_workflow_route_hits": {
+      "browse_product": [
+        "[products] GET /category/:type",
+        "[products] GET /:id",
+        "[products] POST /ids",
+        "[products] GET /"
+      ],
+      "cart_workflow": [
+        "[customer] POST /signup",
+        "[customer] POST /login",
+        "[products] GET /",
+        "[shopping] PUT /cart",
+        "[shopping] DELETE /cart/:id",
+        "[shopping] GET /cart"
+      ],
+      "checkout_workflow": [
+        "[customer] POST /signup",
+        "[customer] POST /login",
+        "[products] GET /",
+        "[shopping] POST /order",
+        "[shopping] GET /orders",
+        "[shopping] PUT /cart",
+        "[shopping] GET /cart"
+      ],
+      "customer_workflow": [
+        "[customer] GET /profile",
+        "[customer] GET /shoping-details"
+      ],
+      "login": [
+        "[customer] POST /login"
+      ],
+      "signup": [
+        "[customer] POST /signup"
+      ],
+      "wishlist_workflow": [
+        "[products] PUT /wishlist",
+        "[products] DELETE /wishlist/:id",
+        "[products] GET /"
+      ]
+    }
+  },
+  "sample1": {
+    "sampling": "sample1",
+    "sampling_label": "1%",
+    "architecture": "microservices",
+    "static_route_count": 23,
+    "total_workflow_runs": 14,
+    "total_traces": 1276,
+    "total_spans": 13056,
+    "matched_route_count": 15,
+    "missing_route_count": 8,
+    "route_coverage_percent": 65.22,
+    "matched_routes": [
+      "[customer] POST /signup",
+      "[customer] POST /login",
+      "[customer] GET /profile",
+      "[customer] GET /shoping-details",
+      "[products] GET /category/:type",
+      "[products] GET /:id",
+      "[products] POST /ids",
+      "[products] PUT /wishlist",
+      "[products] DELETE /wishlist/:id",
+      "[products] GET /",
+      "[shopping] POST /order",
+      "[shopping] GET /orders",
+      "[shopping] PUT /cart",
+      "[shopping] DELETE /cart/:id",
+      "[shopping] GET /cart"
+    ],
+    "missing_routes": [
+      "[customer] POST /address",
+      "[customer] GET /wishlist",
+      "[customer] GET /whoami",
+      "[products] POST /product/create",
+      "[products] PUT /cart",
+      "[products] DELETE /cart/:id",
+      "[products] GET /whoami",
+      "[shopping] GET /whoami"
+    ],
+    "per_workflow_route_hits": {
+      "browse_product": [
+        "[products] GET /category/:type",
+        "[products] GET /:id",
+        "[products] POST /ids",
+        "[products] GET /"
+      ],
+      "cart_workflow": [
+        "[customer] POST /signup",
+        "[customer] POST /login",
+        "[products] GET /",
+        "[shopping] PUT /cart",
+        "[shopping] DELETE /cart/:id",
+        "[shopping] GET /cart"
+      ],
+      "checkout_workflow": [
+        "[customer] POST /signup",
+        "[customer] POST /login",
+        "[products] GET /",
+        "[shopping] POST /order",
+        "[shopping] GET /orders",
+        "[shopping] PUT /cart",
+        "[shopping] GET /cart"
+      ],
+      "customer_workflow": [
+        "[customer] GET /profile",
+        "[customer] GET /shoping-details"
+      ],
+      "login": [
+        "[customer] POST /login"
+      ],
+      "signup": [
+        "[customer] POST /signup"
+      ],
+      "wishlist_workflow": [
+        "[products] PUT /wishlist",
+        "[products] DELETE /wishlist/:id",
+        "[products] GET /"
+      ]
+    }
+  }
+}

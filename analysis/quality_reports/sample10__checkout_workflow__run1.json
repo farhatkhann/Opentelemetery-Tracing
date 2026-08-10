@@ -1,0 +1,158 @@
+{
+  "label": "sample10/checkout_workflow/run1",
+  "sampling": "sample10",
+  "workflow": "checkout_workflow",
+  "run": 1,
+  "microservices_mode": true,
+  "trace_count": 1536,
+  "span_count": 17484,
+  "route_coverage_percent": 30.43,
+  "static_route_count": 23,
+  "matched_route_count": 7,
+  "missing_route_count": 16,
+  "matched_routes": [
+    "[customer] POST /login",
+    "[customer] POST /signup",
+    "[products] GET /",
+    "[shopping] GET /cart",
+    "[shopping] GET /orders",
+    "[shopping] POST /order",
+    "[shopping] PUT /cart"
+  ],
+  "missing_routes": [
+    "[customer] GET /profile",
+    "[customer] GET /shoping-details",
+    "[customer] GET /whoami",
+    "[customer] GET /wishlist",
+    "[customer] POST /address",
+    "[products] DELETE /cart/:id",
+    "[products] DELETE /wishlist/:id",
+    "[products] GET /:id",
+    "[products] GET /category/:type",
+    "[products] GET /whoami",
+    "[products] POST /ids",
+    "[products] POST /product/create",
+    "[products] PUT /cart",
+    "[products] PUT /wishlist",
+    "[shopping] DELETE /cart/:id",
+    "[shopping] GET /whoami"
+  ],
+  "unexpected_route_operations": [
+    "[customer-service] POST /order"
+  ],
+  "context_propagation": {
+    "traces_file": "..\\datasets\\traces\\microservices\\sample10\\checkout_workflow\\run1\\traces.json",
+    "total_traces": 1536,
+    "total_spans": 17484,
+    "single_span_traces": 0,
+    "single_span_traces_percent": 0.0,
+    "traces_with_broken_references": 0,
+    "traces_with_broken_references_percent": 0.0,
+    "traces_with_multiple_roots": 0,
+    "traces_with_multiple_roots_percent": 0.0,
+    "traces_with_zero_roots": 0,
+    "total_orphan_spans": 0,
+    "traces_spanning_multiple_services": 302,
+    "traces_spanning_multiple_services_percent": 19.66,
+    "service_count_histogram": {
+      "2": 302,
+      "1": 1234
+    },
+    "broken_reference_examples": [],
+    "multiple_root_examples": [],
+    "cross_service_examples": [
+      {
+        "traceID": "d80c81a8664b3a26f90e42d65323f883",
+        "services": [
+          "customer-service",
+          "shopping-service"
+        ],
+        "total_spans": 16
+      },
+      {
+        "traceID": "dc2d05f81bf30c932116f4bde8e88eb4",
+        "services": [
+          "customer-service",
+          "shopping-service"
+        ],
+        "total_spans": 16
+      },
+      {
+        "traceID": "e2ed6913e0206256c0e17379ca7d612b",
+        "services": [
+          "customer-service",
+          "shopping-service"
+        ],
+        "total_spans": 16
+      },
+      {
+        "traceID": "4edd88eacd27a7824be0ec69db541341",
+        "services": [
+          "customer-service",
+          "shopping-service"
+        ],
+        "total_spans": 16
+      },
+      {
+        "traceID": "b69be360911446e098efd283ae2fe0d0",
+        "services": [
+          "customer-service",
+          "shopping-service"
+        ],
+        "total_spans": 16
+      },
+      {
+        "traceID": "469fcfd36b0d975c3d4f55ee1e333c97",
+        "services": [
+          "customer-service",
+          "shopping-service"
+        ],
+        "total_spans": 16
+      },
+      {
+        "traceID": "db4242d905a3e555a17477157be551bf",
+        "services": [
+          "customer-service",
+          "shopping-service"
+        ],
+        "total_spans": 16
+      },
+      {
+        "traceID": "c3421df400a55751d6a744f400657c66",
+        "services": [
+          "customer-service",
+          "shopping-service"
+        ],
+        "total_spans": 16
+      },
+      {
+        "traceID": "c50c743ed3cd7ed47619d29273241426",
+        "services": [
+          "customer-service",
+          "shopping-service"
+        ],
+        "total_spans": 16
+      },
+      {
+        "traceID": "3ad411e3fb105dfce5eeafdc3659ef91",
+        "services": [
+          "customer-service",
+          "shopping-service"
+        ],
+        "total_spans": 16
+      }
+    ]
+  },
+  "journey_reconstruction": {
+    "expected_step_count": 5,
+    "steps_present": [
+      "GET /",
+      "PUT /cart",
+      "GET /cart",
+      "POST /order",
+      "GET /orders"
+    ],
+    "steps_missing": [],
+    "journey_completeness_percent": 100.0
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "label": "sample100/wishlist_workflow/run1",
+  "sampling": "sample100",
+  "workflow": "wishlist_workflow",
+  "run": 1,
+  "microservices_mode": true,
+  "trace_count": 10085,
+  "span_count": 131092,
+  "route_coverage_percent": 13.04,
+  "static_route_count": 23,
+  "matched_route_count": 3,
+  "missing_route_count": 20,
+  "matched_routes": [
+    "[products] DELETE /wishlist/:id",
+    "[products] GET /",
+    "[products] PUT /wishlist"
+  ],
+  "missing_routes": [
+    "[customer] GET /profile",
+    "[customer] GET /shoping-details",
+    "[customer] GET /whoami",
+    "[customer] GET /wishlist",
+    "[customer] POST /address",
+    "[customer] POST /login",
+    "[customer] POST /signup",
+    "[products] DELETE /cart/:id",
+    "[products] GET /:id",
+    "[products] GET /category/:type",
+    "[products] GET /whoami",
+    "[products] POST /ids",
+    "[products] POST /product/create",
+    "[products] PUT /cart",
+    "[shopping] DELETE /cart/:id",
+    "[shopping] GET /cart",
+    "[shopping] GET /orders",
+    "[shopping] GET /whoami",
+    "[shopping] POST /order",
+    "[shopping] PUT /cart"
+  ],
+  "unexpected_route_operations": [
+    "[product-service] GET /metrics"
+  ],
+  "context_propagation": {
+    "traces_file": "..\\datasets\\traces\\microservices\\sample100\\wishlist_workflow\\run1\\traces.json",
+    "total_traces": 10085,
+    "total_spans": 131092,
+    "single_span_traces": 0,
+    "single_span_traces_percent": 0.0,
+    "traces_with_broken_references": 0,
+    "traces_with_broken_references_percent": 0.0,
+    "traces_with_multiple_roots": 0,
+    "traces_with_multiple_roots_percent": 0.0,
+    "traces_with_zero_roots": 0,
+    "total_orphan_spans": 0,
+    "traces_spanning_multiple_services": 6722,
+    "traces_spanning_multiple_services_percent": 66.65,
+    "service_count_histogram": {
+      "2": 6722,
+      "1": 3363
+    },
+    "broken_reference_examples": [],
+    "multiple_root_examples": [],
+    "cross_service_examples": [
+      {
+        "traceID": "37f10618606993c9d17c14ad9078233d",
+        "services": [
+          "customer-service",
+          "product-service"
+        ],
+        "total_spans": 15
+      },
+      {
+        "traceID": "e1f34c54b088b15a4c2531022ff45927",
+        "services": [
+          "customer-service",
+          "product-service"
+        ],
+        "total_spans": 15
+      },
+      {
+        "traceID": "d757ec0439ae553f98b1967247dd3191",
+        "services": [
+          "customer-service",
+          "product-service"
+        ],
+        "total_spans": 15
+      },
+      {
+        "traceID": "4bf10e42bfacb8080da032cc33c0bdcb",
+        "services": [
+          "customer-service",
+          "product-service"
+        ],
+        "total_spans": 15
+      },
+      {
+        "traceID": "2599077e06c7b3ab5c22432e547b2402",
+        "services": [
+          "customer-service",
+          "product-service"
+        ],
+        "total_spans": 15
+      },
+      {
+        "traceID": "63b1598cfa52b0d316cbe1042f9e931c",
+        "services": [
+          "customer-service",
+          "product-service"
+        ],
+        "total_spans": 15
+      },
+      {
+        "traceID": "8021a557402d5def5a20eacc8b6724d4",
+        "services": [
+          "customer-service",
+          "product-service"
+        ],
+        "total_spans": 15
+      },
+      {
+        "traceID": "b17723cccce16784e401684a06fc6e20",
+        "services": [
+          "customer-service",
+          "product-service"
+        ],
+        "total_spans": 15
+      },
+      {
+        "traceID": "68361910a664ef23a09da1b50a02dbe0",
+        "services": [
+          "customer-service",
+          "product-service"
+        ],
+        "total_spans": 15
+      },
+      {
+        "traceID": "ae73e625595703524208ab300b08f9b3",
+        "services": [
+          "customer-service",
+          "product-service"
+        ],
+        "total_spans": 15
+      }
+    ]
+  },
+  "journey_reconstruction": {
+    "expected_step_count": 8,
+    "steps_present": [
+      "GET /",
+      "PUT /wishlist",
+      "DELETE /wishlist/:id",
+      "GET /",
+      "PUT /wishlist",
+      "DELETE /wishlist/:id"
+    ],
+    "steps_missing": [
+      "GET /wishlist",
+      "GET /wishlist"
+    ],
+    "journey_completeness_percent": 75.0
+  }
+}

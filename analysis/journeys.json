@@ -1,0 +1,124 @@
+{
+  "browse_product": [
+    {
+      "step": 1,
+      "operation": "GET /"
+    },
+    {
+      "step": 2,
+      "operation": "GET /category/:type"
+    },
+    {
+      "step": 3,
+      "operation": "GET /:id"
+    },
+    {
+      "step": 4,
+      "operation": "POST /ids"
+    }
+  ],
+  "cart_workflow": [
+    {
+      "step": 1,
+      "operation": "GET /"
+    },
+    {
+      "step": 2,
+      "operation": "PUT /cart"
+    },
+    {
+      "step": 3,
+      "operation": "GET /cart"
+    },
+    {
+      "step": 4,
+      "operation": "PUT /cart"
+    },
+    {
+      "step": 5,
+      "operation": "DELETE /cart/:id"
+    }
+  ],
+  "checkout_workflow": [
+    {
+      "step": 1,
+      "operation": "GET /"
+    },
+    {
+      "step": 2,
+      "operation": "PUT /cart"
+    },
+    {
+      "step": 3,
+      "operation": "GET /cart"
+    },
+    {
+      "step": 4,
+      "operation": "POST /order"
+    },
+    {
+      "step": 5,
+      "operation": "GET /orders"
+    }
+  ],
+  "customer_workflow": [
+    {
+      "step": 1,
+      "operation": "POST /address"
+    },
+    {
+      "step": 2,
+      "operation": "GET /profile"
+    },
+    {
+      "step": 3,
+      "operation": "GET /shoping-details"
+    }
+  ],
+  "login": [
+    {
+      "step": 1,
+      "operation": "POST /login"
+    }
+  ],
+  "signup": [
+    {
+      "step": 1,
+      "operation": "POST /signup"
+    }
+  ],
+  "wishlist_workflow": [
+    {
+      "step": 1,
+      "operation": "GET /"
+    },
+    {
+      "step": 2,
+      "operation": "PUT /wishlist"
+    },
+    {
+      "step": 3,
+      "operation": "GET /wishlist"
+    },
+    {
+      "step": 4,
+      "operation": "DELETE /wishlist/:id"
+    },
+    {
+      "step": 5,
+      "operation": "GET /"
+    },
+    {
+      "step": 6,
+      "operation": "PUT /wishlist"
+    },
+    {
+      "step": 7,
+      "operation": "GET /wishlist"
+    },
+    {
+      "step": 8,
+      "operation": "DELETE /wishlist/:id"
+    }
+  ]
+}
