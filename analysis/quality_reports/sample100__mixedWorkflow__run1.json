@@ -1,0 +1,45 @@
+{
+  "label": "sample100/mixedWorkflow/run1",
+  "sampling": "sample100",
+  "workflow": "mixedWorkflow",
+  "run": 1,
+  "trace_count": 8285,
+  "span_count": 55222,
+  "route_coverage_percent": 17.65,
+  "matched_routes": [
+    "GET /owners",
+    "GET /owners/{ownerId}",
+    "GET /vets"
+  ],
+  "context_propagation": {
+    "traces_file": "..\\datasets\\traces\\monolith\\sample100\\mixedWorkflow\\run1\\traces.json",
+    "total_traces": 8285,
+    "total_spans": 55222,
+    "single_span_traces": 2763,
+    "single_span_traces_percent": 33.35,
+    "traces_with_broken_references": 0,
+    "traces_with_broken_references_percent": 0.0,
+    "traces_with_multiple_roots": 0,
+    "traces_with_multiple_roots_percent": 0.0,
+    "traces_with_zero_roots": 0,
+    "total_orphan_spans": 0,
+    "traces_spanning_multiple_services": 0,
+    "traces_spanning_multiple_services_percent": 0.0,
+    "service_count_histogram": {
+      "1": 8285
+    },
+    "broken_reference_examples": [],
+    "multiple_root_examples": [],
+    "cross_service_examples": []
+  },
+  "journey_reconstruction": {
+    "expected_step_count": 3,
+    "steps_present": [
+      "GET /owners",
+      "GET /owners/{ownerId}",
+      "GET /vets"
+    ],
+    "steps_missing": [],
+    "journey_completeness_percent": 100.0
+  }
+}

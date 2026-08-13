@@ -1,0 +1,41 @@
+{
+  "label": "sample100/ownerUpdate/run2",
+  "sampling": "sample100",
+  "workflow": "ownerUpdate",
+  "run": 2,
+  "trace_count": 3963,
+  "span_count": 47534,
+  "route_coverage_percent": 5.88,
+  "matched_routes": [
+    "POST /owners/{ownerId}/edit"
+  ],
+  "context_propagation": {
+    "traces_file": "..\\datasets\\traces\\monolith\\sample100\\ownerUpdate\\run2\\traces.json",
+    "total_traces": 3963,
+    "total_spans": 47534,
+    "single_span_traces": 2,
+    "single_span_traces_percent": 0.05,
+    "traces_with_broken_references": 0,
+    "traces_with_broken_references_percent": 0.0,
+    "traces_with_multiple_roots": 0,
+    "traces_with_multiple_roots_percent": 0.0,
+    "traces_with_zero_roots": 0,
+    "total_orphan_spans": 0,
+    "traces_spanning_multiple_services": 0,
+    "traces_spanning_multiple_services_percent": 0.0,
+    "service_count_histogram": {
+      "1": 3963
+    },
+    "broken_reference_examples": [],
+    "multiple_root_examples": [],
+    "cross_service_examples": []
+  },
+  "journey_reconstruction": {
+    "expected_step_count": 1,
+    "steps_present": [
+      "POST /owners/{ownerId}/edit"
+    ],
+    "steps_missing": [],
+    "journey_completeness_percent": 100.0
+  }
+}

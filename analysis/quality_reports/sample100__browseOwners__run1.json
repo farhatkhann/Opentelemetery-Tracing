@@ -1,0 +1,45 @@
+{
+  "label": "sample100/browseOwners/run1",
+  "sampling": "sample100",
+  "workflow": "browseOwners",
+  "run": 1,
+  "trace_count": 10000,
+  "span_count": 66661,
+  "route_coverage_percent": 17.65,
+  "matched_routes": [
+    "GET /owners",
+    "GET /owners/{ownerId}",
+    "GET /vets"
+  ],
+  "context_propagation": {
+    "traces_file": "..\\datasets\\traces\\monolith\\sample100\\browseOwners\\run1\\traces.json",
+    "total_traces": 10000,
+    "total_spans": 66661,
+    "single_span_traces": 3334,
+    "single_span_traces_percent": 33.34,
+    "traces_with_broken_references": 0,
+    "traces_with_broken_references_percent": 0.0,
+    "traces_with_multiple_roots": 0,
+    "traces_with_multiple_roots_percent": 0.0,
+    "traces_with_zero_roots": 0,
+    "total_orphan_spans": 0,
+    "traces_spanning_multiple_services": 0,
+    "traces_spanning_multiple_services_percent": 0.0,
+    "service_count_histogram": {
+      "1": 10000
+    },
+    "broken_reference_examples": [],
+    "multiple_root_examples": [],
+    "cross_service_examples": []
+  },
+  "journey_reconstruction": {
+    "expected_step_count": 3,
+    "steps_present": [
+      "GET /owners",
+      "GET /owners/{ownerId}",
+      "GET /vets"
+    ],
+    "steps_missing": [],
+    "journey_completeness_percent": 100.0
+  }
+}

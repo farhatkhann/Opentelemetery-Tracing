@@ -1,0 +1,320 @@
+{
+  "off": {
+    "runs_included": [
+      [
+        "browseOwners",
+        "run1"
+      ],
+      [
+        "mixedWorkflow",
+        "run1"
+      ],
+      [
+        "ownerRegistration",
+        "run1"
+      ],
+      [
+        "ownerUpdate",
+        "run1"
+      ],
+      [
+        "petRegistration",
+        "run1"
+      ],
+      [
+        "visitRegistration",
+        "run1"
+      ]
+    ],
+    "total_traces": 0,
+    "total_spans": 0,
+    "route_coverage_percent": 0.0,
+    "matched_routes": [],
+    "missing_routes": [
+      "GET /",
+      "GET /oups",
+      "GET /owners",
+      "GET /owners/find",
+      "GET /owners/new",
+      "GET /owners/{ownerId}",
+      "GET /owners/{ownerId}/edit",
+      "GET /owners/{ownerId}/pets/new",
+      "GET /owners/{ownerId}/pets/{petId}/edit",
+      "GET /owners/{ownerId}/pets/{petId}/visits/new",
+      "GET /vets",
+      "GET /vets.html",
+      "POST /owners/new",
+      "POST /owners/{ownerId}/edit",
+      "POST /owners/{ownerId}/pets/new",
+      "POST /owners/{ownerId}/pets/{petId}/edit",
+      "POST /owners/{ownerId}/pets/{petId}/visits/new"
+    ],
+    "per_workflow_route_hits": {
+      "browseOwners": [],
+      "mixedWorkflow": [],
+      "ownerRegistration": [],
+      "ownerUpdate": [],
+      "petRegistration": [],
+      "visitRegistration": []
+    }
+  },
+  "sample1": {
+    "runs_included": [
+      [
+        "browseOwners",
+        "run1"
+      ],
+      [
+        "mixedWorkflow",
+        "run1"
+      ],
+      [
+        "ownerRegistration",
+        "run1"
+      ],
+      [
+        "ownerUpdate",
+        "run1"
+      ],
+      [
+        "petRegistration",
+        "run1"
+      ],
+      [
+        "visitRegistration",
+        "run1"
+      ]
+    ],
+    "total_traces": 574,
+    "total_spans": 17990,
+    "route_coverage_percent": 41.18,
+    "matched_routes": [
+      "GET /owners",
+      "GET /owners/{ownerId}",
+      "GET /vets",
+      "POST /owners/new",
+      "POST /owners/{ownerId}/edit",
+      "POST /owners/{ownerId}/pets/new",
+      "POST /owners/{ownerId}/pets/{petId}/visits/new"
+    ],
+    "missing_routes": [
+      "GET /",
+      "GET /oups",
+      "GET /owners/find",
+      "GET /owners/new",
+      "GET /owners/{ownerId}/edit",
+      "GET /owners/{ownerId}/pets/new",
+      "GET /owners/{ownerId}/pets/{petId}/edit",
+      "GET /owners/{ownerId}/pets/{petId}/visits/new",
+      "GET /vets.html",
+      "POST /owners/{ownerId}/pets/{petId}/edit"
+    ],
+    "per_workflow_route_hits": {
+      "browseOwners": [
+        "GET /owners",
+        "GET /owners/{ownerId}",
+        "GET /vets"
+      ],
+      "mixedWorkflow": [
+        "GET /owners",
+        "GET /owners/{ownerId}",
+        "GET /vets"
+      ],
+      "ownerRegistration": [
+        "GET /owners/{ownerId}",
+        "POST /owners/new"
+      ],
+      "ownerUpdate": [
+        "GET /owners/{ownerId}",
+        "POST /owners/{ownerId}/edit"
+      ],
+      "petRegistration": [
+        "GET /owners/{ownerId}",
+        "POST /owners/{ownerId}/pets/new"
+      ],
+      "visitRegistration": [
+        "POST /owners/{ownerId}/pets/{petId}/visits/new"
+      ]
+    }
+  },
+  "sample10": {
+    "runs_included": [
+      [
+        "browseOwners",
+        "run1"
+      ],
+      [
+        "mixedWorkflow",
+        "run1"
+      ],
+      [
+        "ownerRegistration",
+        "run1"
+      ],
+      [
+        "ownerUpdate",
+        "run1"
+      ],
+      [
+        "petRegistration",
+        "run1"
+      ],
+      [
+        "visitRegistration",
+        "run1"
+      ]
+    ],
+    "total_traces": 6218,
+    "total_spans": 189687,
+    "route_coverage_percent": 41.18,
+    "matched_routes": [
+      "GET /owners",
+      "GET /owners/{ownerId}",
+      "GET /vets",
+      "POST /owners/new",
+      "POST /owners/{ownerId}/edit",
+      "POST /owners/{ownerId}/pets/new",
+      "POST /owners/{ownerId}/pets/{petId}/visits/new"
+    ],
+    "missing_routes": [
+      "GET /",
+      "GET /oups",
+      "GET /owners/find",
+      "GET /owners/new",
+      "GET /owners/{ownerId}/edit",
+      "GET /owners/{ownerId}/pets/new",
+      "GET /owners/{ownerId}/pets/{petId}/edit",
+      "GET /owners/{ownerId}/pets/{petId}/visits/new",
+      "GET /vets.html",
+      "POST /owners/{ownerId}/pets/{petId}/edit"
+    ],
+    "per_workflow_route_hits": {
+      "browseOwners": [
+        "GET /owners",
+        "GET /owners/{ownerId}",
+        "GET /vets"
+      ],
+      "mixedWorkflow": [
+        "GET /owners",
+        "GET /owners/{ownerId}",
+        "GET /vets"
+      ],
+      "ownerRegistration": [
+        "GET /owners/{ownerId}",
+        "POST /owners/new"
+      ],
+      "ownerUpdate": [
+        "GET /owners/{ownerId}",
+        "POST /owners/{ownerId}/edit"
+      ],
+      "petRegistration": [
+        "GET /owners/{ownerId}",
+        "POST /owners/{ownerId}/pets/new"
+      ],
+      "visitRegistration": [
+        "POST /owners/{ownerId}/pets/{petId}/visits/new"
+      ]
+    }
+  },
+  "sample100": {
+    "runs_included": [
+      [
+        "browseOwners",
+        "run1"
+      ],
+      [
+        "browseOwners",
+        "run2"
+      ],
+      [
+        "mixedWorkflow",
+        "run1"
+      ],
+      [
+        "mixedWorkflow",
+        "run2"
+      ],
+      [
+        "ownerRegistration",
+        "run1"
+      ],
+      [
+        "ownerRegistration",
+        "run2"
+      ],
+      [
+        "ownerUpdate",
+        "run1"
+      ],
+      [
+        "ownerUpdate",
+        "run2"
+      ],
+      [
+        "petRegistration",
+        "run1"
+      ],
+      [
+        "petRegistration",
+        "run2"
+      ],
+      [
+        "visitRegistration",
+        "run1"
+      ],
+      [
+        "visitRegistration",
+        "run2"
+      ]
+    ],
+    "total_traces": 69307,
+    "total_spans": 1542189,
+    "route_coverage_percent": 41.18,
+    "matched_routes": [
+      "GET /owners",
+      "GET /owners/{ownerId}",
+      "GET /vets",
+      "POST /owners/new",
+      "POST /owners/{ownerId}/edit",
+      "POST /owners/{ownerId}/pets/new",
+      "POST /owners/{ownerId}/pets/{petId}/visits/new"
+    ],
+    "missing_routes": [
+      "GET /",
+      "GET /oups",
+      "GET /owners/find",
+      "GET /owners/new",
+      "GET /owners/{ownerId}/edit",
+      "GET /owners/{ownerId}/pets/new",
+      "GET /owners/{ownerId}/pets/{petId}/edit",
+      "GET /owners/{ownerId}/pets/{petId}/visits/new",
+      "GET /vets.html",
+      "POST /owners/{ownerId}/pets/{petId}/edit"
+    ],
+    "per_workflow_route_hits": {
+      "browseOwners": [
+        "GET /owners",
+        "GET /owners/{ownerId}",
+        "GET /vets"
+      ],
+      "mixedWorkflow": [
+        "GET /owners",
+        "GET /owners/{ownerId}",
+        "GET /vets"
+      ],
+      "ownerRegistration": [
+        "GET /owners/{ownerId}",
+        "POST /owners/new"
+      ],
+      "ownerUpdate": [
+        "POST /owners/{ownerId}/edit"
+      ],
+      "petRegistration": [
+        "POST /owners/{ownerId}/pets/new"
+      ],
+      "visitRegistration": [
+        "POST /owners/{ownerId}/pets/{petId}/visits/new"
+      ]
+    }
+  }
+}

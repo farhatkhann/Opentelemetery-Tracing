@@ -1,0 +1,181 @@
+{
+  "total_operations": 22,
+  "by_layer": {
+    "route": 17,
+    "service": 0,
+    "repository": 5
+  },
+  "operations": [
+    {
+      "name": "GET /owners/new",
+      "layer": "route",
+      "class": "OwnerController",
+      "method": "initCreationForm",
+      "file": "org\\springframework\\samples\\petclinic\\owner\\OwnerController.java",
+      "line": 73
+    },
+    {
+      "name": "POST /owners/new",
+      "layer": "route",
+      "class": "OwnerController",
+      "method": "processCreationForm",
+      "file": "org\\springframework\\samples\\petclinic\\owner\\OwnerController.java",
+      "line": 78
+    },
+    {
+      "name": "GET /owners/find",
+      "layer": "route",
+      "class": "OwnerController",
+      "method": "initFindForm",
+      "file": "org\\springframework\\samples\\petclinic\\owner\\OwnerController.java",
+      "line": 90
+    },
+    {
+      "name": "GET /owners",
+      "layer": "route",
+      "class": "OwnerController",
+      "method": "processFindForm",
+      "file": "org\\springframework\\samples\\petclinic\\owner\\OwnerController.java",
+      "line": 95
+    },
+    {
+      "name": "GET /owners/{ownerId}/edit",
+      "layer": "route",
+      "class": "OwnerController",
+      "method": "initUpdateOwnerForm",
+      "file": "org\\springframework\\samples\\petclinic\\owner\\OwnerController.java",
+      "line": 137
+    },
+    {
+      "name": "POST /owners/{ownerId}/edit",
+      "layer": "route",
+      "class": "OwnerController",
+      "method": "processUpdateOwnerForm",
+      "file": "org\\springframework\\samples\\petclinic\\owner\\OwnerController.java",
+      "line": 142
+    },
+    {
+      "name": "GET /owners/{ownerId}",
+      "layer": "route",
+      "class": "OwnerController",
+      "method": "showOwner",
+      "file": "org\\springframework\\samples\\petclinic\\owner\\OwnerController.java",
+      "line": 167
+    },
+    {
+      "name": "GET /owners/{ownerId}/pets/new",
+      "layer": "route",
+      "class": "PetController",
+      "method": "initCreationForm",
+      "file": "org\\springframework\\samples\\petclinic\\owner\\PetController.java",
+      "line": 101
+    },
+    {
+      "name": "POST /owners/{ownerId}/pets/new",
+      "layer": "route",
+      "class": "PetController",
+      "method": "processCreationForm",
+      "file": "org\\springframework\\samples\\petclinic\\owner\\PetController.java",
+      "line": 108
+    },
+    {
+      "name": "GET /owners/{ownerId}/pets/{petId}/edit",
+      "layer": "route",
+      "class": "PetController",
+      "method": "initUpdateForm",
+      "file": "org\\springframework\\samples\\petclinic\\owner\\PetController.java",
+      "line": 140
+    },
+    {
+      "name": "POST /owners/{ownerId}/pets/{petId}/edit",
+      "layer": "route",
+      "class": "PetController",
+      "method": "processUpdateForm",
+      "file": "org\\springframework\\samples\\petclinic\\owner\\PetController.java",
+      "line": 145
+    },
+    {
+      "name": "GET /owners/{ownerId}/pets/{petId}/visits/new",
+      "layer": "route",
+      "class": "VisitController",
+      "method": "initNewVisitForm",
+      "file": "org\\springframework\\samples\\petclinic\\owner\\VisitController.java",
+      "line": 91
+    },
+    {
+      "name": "POST /owners/{ownerId}/pets/{petId}/visits/new",
+      "layer": "route",
+      "class": "VisitController",
+      "method": "processNewVisitForm",
+      "file": "org\\springframework\\samples\\petclinic\\owner\\VisitController.java",
+      "line": 98
+    },
+    {
+      "name": "GET /oups",
+      "layer": "route",
+      "class": "CrashController",
+      "method": "triggerException",
+      "file": "org\\springframework\\samples\\petclinic\\system\\CrashController.java",
+      "line": 32
+    },
+    {
+      "name": "GET /",
+      "layer": "route",
+      "class": "WelcomeController",
+      "method": "welcome",
+      "file": "org\\springframework\\samples\\petclinic\\system\\WelcomeController.java",
+      "line": 26
+    },
+    {
+      "name": "GET /vets.html",
+      "layer": "route",
+      "class": "VetController",
+      "method": "showVetList",
+      "file": "org\\springframework\\samples\\petclinic\\vet\\VetController.java",
+      "line": 45
+    },
+    {
+      "name": "GET /vets",
+      "layer": "route",
+      "class": "VetController",
+      "method": "showResourcesVetList",
+      "file": "org\\springframework\\samples\\petclinic\\vet\\VetController.java",
+      "line": 66
+    },
+    {
+      "name": "findByLastNameStartingWith",
+      "class": "OwnerRepository",
+      "layer": "repository",
+      "file": "org\\springframework\\samples\\petclinic\\owner\\OwnerRepository.java",
+      "line": 45
+    },
+    {
+      "name": "findById",
+      "class": "OwnerRepository",
+      "layer": "repository",
+      "file": "org\\springframework\\samples\\petclinic\\owner\\OwnerRepository.java",
+      "line": 60
+    },
+    {
+      "name": "findPetTypes",
+      "class": "PetTypeRepository",
+      "layer": "repository",
+      "file": "org\\springframework\\samples\\petclinic\\owner\\PetTypeRepository.java",
+      "line": 37
+    },
+    {
+      "name": "findAll",
+      "class": "VetRepository",
+      "layer": "repository",
+      "file": "org\\springframework\\samples\\petclinic\\vet\\VetRepository.java",
+      "line": 46
+    },
+    {
+      "name": "findAll",
+      "class": "VetRepository",
+      "layer": "repository",
+      "file": "org\\springframework\\samples\\petclinic\\vet\\VetRepository.java",
+      "line": 56
+    }
+  ]
+}

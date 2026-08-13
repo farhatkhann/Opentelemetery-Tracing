@@ -1,0 +1,6 @@
+pip install javalang
+python extract_static_inventory_java.py --src-root ../src/main/java --out static_inventory.json
+
+python run_quality_analysis.py --base-dir ../datasets/traces/monolith --inventory static_inventory.json --journeys journeys.json --report-dir quality_reports
+
+python aggregate_coverage_by_sampling.py --base-dir ../datasets/traces/monolith --inventory static_inventory.json --out aggregate_coverage.json

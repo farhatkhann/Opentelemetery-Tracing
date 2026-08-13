@@ -1,0 +1,41 @@
+{
+  "label": "sample100/visitRegistration/run1",
+  "sampling": "sample100",
+  "workflow": "visitRegistration",
+  "run": 1,
+  "trace_count": 1203,
+  "span_count": 268331,
+  "route_coverage_percent": 5.88,
+  "matched_routes": [
+    "POST /owners/{ownerId}/pets/{petId}/visits/new"
+  ],
+  "context_propagation": {
+    "traces_file": "..\\datasets\\traces\\monolith\\sample100\\visitRegistration\\run1\\traces.json",
+    "total_traces": 1203,
+    "total_spans": 268331,
+    "single_span_traces": 2,
+    "single_span_traces_percent": 0.17,
+    "traces_with_broken_references": 0,
+    "traces_with_broken_references_percent": 0.0,
+    "traces_with_multiple_roots": 0,
+    "traces_with_multiple_roots_percent": 0.0,
+    "traces_with_zero_roots": 0,
+    "total_orphan_spans": 0,
+    "traces_spanning_multiple_services": 0,
+    "traces_spanning_multiple_services_percent": 0.0,
+    "service_count_histogram": {
+      "1": 1203
+    },
+    "broken_reference_examples": [],
+    "multiple_root_examples": [],
+    "cross_service_examples": []
+  },
+  "journey_reconstruction": {
+    "expected_step_count": 1,
+    "steps_present": [
+      "POST /owners/{ownerId}/pets/{petId}/visits/new"
+    ],
+    "steps_missing": [],
+    "journey_completeness_percent": 100.0
+  }
+}

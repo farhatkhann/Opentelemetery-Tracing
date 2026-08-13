@@ -1,0 +1,54 @@
+{
+  "browseOwners": [
+    {
+      "step": 1,
+      "operation": "GET /owners"
+    },
+    {
+      "step": 2,
+      "operation": "GET /owners/{ownerId}"
+    },
+    {
+      "step": 3,
+      "operation": "GET /vets"
+    }
+  ],
+  "mixedWorkflow": [
+    {
+      "step": 1,
+      "operation": "GET /owners"
+    },
+    {
+      "step": 2,
+      "operation": "GET /owners/{ownerId}"
+    },
+    {
+      "step": 3,
+      "operation": "GET /vets"
+    }
+  ],
+  "ownerRegistration": [
+    {
+      "step": 1,
+      "operation": "POST /owners/new"
+    }
+  ],
+  "ownerUpdate": [
+    {
+      "step": 1,
+      "operation": "POST /owners/{ownerId}/edit"
+    }
+  ],
+  "petRegistration": [
+    {
+      "step": 1,
+      "operation": "POST /owners/{ownerId}/pets/new"
+    }
+  ],
+  "visitRegistration": [
+    {
+      "step": 1,
+      "operation": "POST /owners/{ownerId}/pets/{petId}/visits/new"
+    }
+  ]
+}
