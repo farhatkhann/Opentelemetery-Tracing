@@ -46,3 +46,19 @@ out/
 _site/
 *.css
 !petclinic.css
+
+# Python
+__pycache__/
+**/__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OpenTelemetry Java agent
+otel/opentelemetry-javaagent.jar
+
+# Ignore generated trace folders
+datasets/traces/monolith/off/
+datasets/traces/monolith/sample1/
+datasets/traces/monolith/sample10/
+datasets/traces/monolith/sample100/
