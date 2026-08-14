@@ -21,3 +21,20 @@ target/
 generated/
 
 **/.DS_Store
+
+# Python
+__pycache__/
+**/__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OpenTelemetry Java agent
+otel/opentelemetry-javaagent.jar
+
+# Ignore generated trace folders
+datasets/traces/microservices/off/
+datasets/traces/microservices/sample1/
+datasets/traces/microservices/sample10/
+datasets/traces/microservices/sample100/
+
