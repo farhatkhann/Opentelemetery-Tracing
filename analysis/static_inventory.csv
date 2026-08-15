@@ -1,0 +1,16 @@
+service,otel_service_name,http_method,route_template,route_template_normalized,class_name,method_name,source_file,line_number
+api-gateway,api-gateway,GET,/api/gateway/owners/{ownerId},/api/gateway/owners/{param},ApiGatewayController,getOwnerDetails,org\springframework\samples\petclinic\api\boundary\web\ApiGatewayController.java,55
+api-gateway,api-gateway,POST,/fallback,/fallback,FallbackController,fallback,org\springframework\samples\petclinic\api\boundary\web\FallbackController.java,12
+customers-service,customers-service,GET,/owners,/owners,OwnerResource,findAll,org\springframework\samples\petclinic\customers\web\OwnerResource.java,76
+customers-service,customers-service,POST,/owners,/owners,OwnerResource,createOwner,org\springframework\samples\petclinic\customers\web\OwnerResource.java,59
+customers-service,customers-service,GET,/owners/{ownerId},/owners/{param},OwnerResource,findOwner,org\springframework\samples\petclinic\customers\web\OwnerResource.java,68
+customers-service,customers-service,PUT,/owners/{ownerId},/owners/{param},OwnerResource,updateOwner,org\springframework\samples\petclinic\customers\web\OwnerResource.java,85
+customers-service,customers-service,POST,/owners/{ownerId}/pets,/owners/{param}/pets,PetResource,processCreationForm,org\springframework\samples\petclinic\customers\web\PetResource.java,56
+customers-service,customers-service,GET,/owners/{param}/pets/{petId},/owners/{param}/pets/{param},PetResource,findPet,org\springframework\samples\petclinic\customers\web\PetResource.java,89
+customers-service,customers-service,PUT,/owners/{param}/pets/{petId},/owners/{param}/pets/{param},PetResource,processUpdateForm,org\springframework\samples\petclinic\customers\web\PetResource.java,70
+customers-service,customers-service,GET,/petTypes,/petTypes,PetResource,getPetTypes,org\springframework\samples\petclinic\customers\web\PetResource.java,50
+genai-service,genai-service,POST,/chatclient,/chatclient,PetclinicChatClient,exchange,org\springframework\samples\petclinic\genai\PetclinicChatClient.java,58
+vets-service,vets-service,GET,/vets,/vets,VetResource,showResourcesVetList,org\springframework\samples\petclinic\vets\web\VetResource.java,46
+visits-service,visits-service,GET,/owners/{param}/pets/{petId}/visits,/owners/{param}/pets/{param}/visits,VisitResource,read,org\springframework\samples\petclinic\visits\web\VisitResource.java,68
+visits-service,visits-service,POST,/owners/{param}/pets/{petId}/visits,/owners/{param}/pets/{param}/visits,VisitResource,create,org\springframework\samples\petclinic\visits\web\VisitResource.java,58
+visits-service,visits-service,GET,/pets/visits,/pets/visits,VisitResource,read,org\springframework\samples\petclinic\visits\web\VisitResource.java,73

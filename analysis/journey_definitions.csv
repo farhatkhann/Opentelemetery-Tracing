@@ -1,0 +1,13 @@
+journey,step_order,step_label,client_http_method,client_path,hop_order,hop_role,service,otel_service_name,backend_route
+browseOwners,1,Owners loaded,GET,/api/customer/owners,1,entry,customers-service,customers-service,/owners
+browseOwners,2,Owner details,GET,/api/customer/owners/{param},1,entry,customers-service,customers-service,/owners/{param}
+browseOwners,3,Veterinarians loaded,GET,/api/vet/vets,1,entry,vets-service,vets-service,/vets
+mixedWorkflow,1,Search Owners,GET,/api/customer/owners,1,entry,customers-service,customers-service,/owners
+mixedWorkflow,2,View Owner,GET,/api/customer/owners/{param},1,entry,customers-service,customers-service,/owners/{param}
+mixedWorkflow,3,View Vets,GET,/api/vet/vets,1,entry,vets-service,vets-service,/vets
+mixedWorkflow,4,View Visits,GET,/api/visit/owners/{param}/pets/{param}/visits,1,entry,visits-service,visits-service,/owners/{param}/pets/{param}/visits
+ownerRegistration,1,Owner created,POST,/api/customer/owners,1,entry,customers-service,customers-service,/owners
+ownerUpdate,1,,PUT,/api/customer/owners/{param},1,entry,customers-service,customers-service,/owners/{param}
+petRegistration,1,Pet types loaded,GET,/api/customer/petTypes,1,entry,customers-service,customers-service,/petTypes
+petRegistration,2,Pet Added,POST,/api/customer/owners/{param}/pets,1,entry,customers-service,customers-service,/owners/{param}/pets
+visitRegistration,1,,POST,/api/visit/owners/{param}/pets/{param}/visits,1,entry,visits-service,visits-service,/owners/{param}/pets/{param}/visits

@@ -1,0 +1,5 @@
+sampling,sampling_label,workflow_runs_included,total_traces,total_spans,endpoints_matched,endpoints_missing,endpoints_total,endpoint_coverage_pct
+off,Off,6,0,0,0,15,15,0.0
+sample1,1%,6,375,32079,7,8,15,46.67
+sample10,10%,6,3645,35751,7,8,15,46.67
+sample100,100%,6,7948,73974,7,8,15,46.67

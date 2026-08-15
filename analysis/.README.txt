@@ -1,0 +1,9 @@
+pip install javalang openpyxl --break-system-packages
+
+python extract_static_inventory_java.py --repo-root .. --out static_inventory.csv
+
+python extract_journey_definitions.py --workflows-dir ../k6/workflows --out journey_definitions.csv
+
+python run_quality_analysis.py --base-dir ../datasets/traces/microservices --inventory static_inventory.csv --journeys journey_definitions.csv --report-dir quality_reports
+
+python aggregate_coverage_by_sampling.py --base-dir ../datasets/traces/microservices --inventory static_inventory.csv --out aggregate_coverage_by_sampling.csv

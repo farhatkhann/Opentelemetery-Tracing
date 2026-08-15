@@ -294,7 +294,7 @@ from openpyxl import Workbook, load_workbook
 # Configuration
 # ==========================================================
 
-APPLICATION = "Grocery App Microservices"
+APPLICATION = "Spring Petclinic Microservices"
 
 BASE_DIR = Path("../datasets/traces/microservices")
 
@@ -313,7 +313,7 @@ SAMPLINGS = {
 
 RUNS = 5
 
-OUTPUT_FILE = BASE_DIR / "grocery_app_microservices_results.xlsx"
+OUTPUT_FILE = BASE_DIR / "spring_petclinic_microservices_results.xlsx"
 
 # ==========================================================
 # Create/Open Workbook
@@ -693,4 +693,4 @@ try:
 
 except PermissionError:
     print("\nERROR: Cannot save the Excel file.")
-    print("Please close 'grocery_app_microservices_results.xlsx' if it is open in Excel and run the script again.")
+    print("Please close 'spring_petclinic_microservices_results.xlsx' if it is open in Excel and run the script again.")
